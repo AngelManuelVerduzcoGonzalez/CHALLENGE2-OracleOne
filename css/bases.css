@@ -1,0 +1,18 @@
+:root {
+    --color-blanco: #FFFFFF;
+    --background-gris-claro: #F5F5F5;
+    --color-gris: #A2A2A2;
+    --color-azul: #2A7AE4;
+    --color-azul-claro: #7FABE5;
+
+    --raleway: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--raleway);
+}
+
+.container {
+    padding-left: 12%;
+    padding-right: 12%;
+}
