@@ -1,0 +1,68 @@
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--background-azul-claro);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contacto__enlace {
+    padding-bottom: 1.5rem;
+}
+
+.contacto__formulario {
+    width: 50%;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contacto__titulo {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.contacto__input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-family: var(--raleway);
+    padding: 0.70rem;
+    border-color: transparent transparent var(--color-gris) transparent;
+    border-width: 1.5px;
+    border-radius: 4px;
+}
+
+.contacto__input:focus {
+    outline: none;
+    border-color: transparent transparent var(--color-azul) transparent;
+}
+
+.contacto__input:focus::placeholder {
+    color: var(--color-azul);
+}
+
+.contacto__input::placeholder {
+    color: var(--color-gris);
+}
+
+.contacto__boton {
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+    border-style: none;
+    font-family: var(--raleway);
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto__boton:hover {
+    cursor: pointer;
+    background-color: var(--color-azul-claro);
+}
+
+

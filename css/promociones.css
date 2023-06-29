@@ -32,5 +32,4 @@
 .promociones__boton:hover {
     cursor: pointer;
     background-color: var(--color-azul-claro);
-
 }

@@ -2,6 +2,10 @@
     padding-top: 4rem;
 }
 
+.articulos__seccion {
+    padding-bottom: 4rem;
+}
+
 .articulos__principal {
     display: flex;
     justify-content: space-between;
