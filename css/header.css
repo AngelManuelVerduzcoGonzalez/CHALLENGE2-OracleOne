@@ -3,6 +3,7 @@
     align-items: center;
     padding-top: 2rem;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 .header__caja {
@@ -13,7 +14,7 @@
 
 .header__input {
     background-color: var(--background-gris-claro);
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     height: 40px;
     border: none;
     padding: 1rem;
@@ -23,13 +24,30 @@
     font-weight: 400;
     font-family: var(--raleway);
     width: 100%;
-    background-image: url(../img/search.svg);
     background-repeat: no-repeat;
     background-position: right 1.2rem top 50%;
 }
 
 .header__input:focus {
-    outline-color: var(--color-gris);
+    outline-color: transparent ;
+}
+
+.header__input::placeholder {
+    color: var(--color-gris);
+}
+
+.header__busqueda {
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: var(--background-gris-claro);
+    border-radius: 0 20px 20px 0;
+}
+
+.header__busqueda:hover {
+    cursor: pointer;
 }
 
 .header__boton {
@@ -40,11 +58,11 @@
     border-width: 1.5px;
     font-weight: 400;
     padding: 1rem 4rem;
-    cursor: pointer;
     transition: all 0.1s ease-in;
 }
 
-.header__boton:active {
+.header__boton:hover {
     color:  var(--color-azul-claro);
     border-color: var(--color-azul-claro);
+    cursor: pointer;
 }

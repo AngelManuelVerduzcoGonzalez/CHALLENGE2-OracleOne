@@ -1,0 +1,58 @@
+.articulos {
+    padding-top: 4rem;
+}
+
+.articulos__principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+.articulos__titulo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-gris-oscuro);
+}
+
+.articulos__link--titulo {
+    color: var(--color-azul);
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: top 53% right;
+    padding-right: 1.5rem;
+}
+
+.articulos__lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulos__producto {
+    width: calc((100% / 6) - 10px);
+}
+
+.articulos__imagen {
+    width: 100%;
+}
+
+.articulos__nombre {
+    font-weight: 500;
+    color: var(--color-gris-oscuro);
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.articulos__precio {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-gris-oscuro);
+    padding-bottom: 0.6rem;
+}
+
+.articulos__link {
+    color: var(--color-azul);
+    font-weight: 700;
+    font-size: 1rem;
+}
+

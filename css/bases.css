@@ -4,8 +4,13 @@
     --color-gris: #A2A2A2;
     --color-azul: #2A7AE4;
     --color-azul-claro: #7FABE5;
+    --color-gris-oscuro: #464646;
 
     --raleway: "Raleway", sans-serif;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {

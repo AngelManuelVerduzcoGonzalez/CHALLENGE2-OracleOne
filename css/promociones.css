@@ -1,0 +1,36 @@
+.promociones {
+    background-image: url(../img/banner-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.promociones__titulo {
+    font-weight: 700;
+    color: var(--color-blanco);
+    font-size: 3.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.promociones__descripcion {
+    color: var(--color-blanco);
+    font-weight: 700;
+    font-size: 1.375rem;
+    padding-bottom: 1rem;
+}
+
+.promociones__boton {
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+    border-style: none;
+    font-family: var(--raleway);
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.promociones__boton:hover {
+    cursor: pointer;
+    background-color: var(--color-azul-claro);
+
+}
