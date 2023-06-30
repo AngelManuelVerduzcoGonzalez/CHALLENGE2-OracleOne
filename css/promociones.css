@@ -1,9 +1,7 @@
 .promociones {
-    background-image: url(../img/banner-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 10rem;
     padding-bottom: 2rem;
+    background: url(../img/banner-image.png) center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8) );
 }
 
 .promociones__titulo {
@@ -32,4 +30,26 @@
 .promociones__boton:hover {
     cursor: pointer;
     background-color: var(--color-azul-claro);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .promociones {
+        background: url(../img/banner-tablet.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8) );
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    .promociones {
+        background: url(../img/banner-mobile.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8) );
+    }
+
+    .promociones__titulo {
+        font-size: 1.375rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .promociones__descripcion {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
 }

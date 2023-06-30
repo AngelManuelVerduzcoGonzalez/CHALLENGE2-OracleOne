@@ -7,8 +7,21 @@
     padding-bottom: 4rem;
 }
 
+.contacto__informacion {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contacto__ayuda {
+    padding-left: 4rem;
+}
+
 .contacto__enlace {
     padding-bottom: 1.5rem;
+}
+
+.contacto__link:hover {
+    text-decoration: underline;
 }
 
 .contacto__formulario {
@@ -65,4 +78,13 @@
     background-color: var(--color-azul-claro);
 }
 
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .contacto__informacion {
+        display: inline;
+    }
 
+    .contacto__ayuda {
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+}
