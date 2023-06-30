@@ -34,13 +34,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .promociones {
-        background: url(../img/banner-tablet.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8) );
+        background: url(../img/banner-tablet.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8));
     }
 }
 
 @media screen and (min-width:0px) and (max-width:768px) {
     .promociones {
-        background: url(../img/banner-mobile.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8) );
+        background: url(../img/banner-tablet.png) cover/center no-repeat, linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8));
+        padding-top: 6rem;
     }
 
     .promociones__titulo {

@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     background-position: top 53% right;
     padding-right: 1.5rem;
+    font-weight: 700;
 }
 
 .articulos__lista {
@@ -69,6 +70,37 @@
         width: calc((100% / 4) - 10px);
     }
     
+    .articulos__producto--last {
+        display: none;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    .articulos {
+        padding-top: 2rem;
+    }
+
+    .articulos__seccion {
+        padding-bottom: 2rem;
+    }
+
+    .articulos__titulo {
+        font-size: 1.375rem;
+    }
+
+    .articulos__link--titulo {
+        font-size: 0.875rem;
+    }
+
+    .articulos__lista {
+        flex-wrap: wrap;
+    }
+
+    .articulos__producto {
+        width: calc((100% / 2) - 10px);
+        padding-bottom: 1rem;
+    }
+
     .articulos__producto--last {
         display: none;
     }

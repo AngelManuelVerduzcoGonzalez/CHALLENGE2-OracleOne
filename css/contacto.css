@@ -88,3 +88,30 @@
         padding-top: 1rem;
     }
 }
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    .contacto {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .contacto__informacion {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contacto__imagen {
+        padding-bottom: 1rem;
+    }
+
+    .contacto__ayuda {
+        padding-left: 0;
+    }
+
+    .contacto__formulario {
+        width: 100%;
+    }
+}
