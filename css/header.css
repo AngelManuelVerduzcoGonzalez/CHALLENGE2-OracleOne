@@ -73,6 +73,18 @@
     transition: all 0.1s ease-in;
 }
 
+.header__boton--administrador {
+    border-color: var(--color-azul);
+    color: var(--color-azul);
+    border-style: solid;
+    background-color: var(--color-blanco);
+    border-width: 1.5px;
+    font-weight: 400;
+    padding: 1rem 4rem;
+    transition: all 0.1s ease-in;
+    font-size: 0.875rem;
+}
+
 .header__boton:hover {
     color:  var(--color-azul-claro);
     border-color: var(--color-azul-claro);
@@ -96,6 +108,10 @@
 
     .header__input {
         font-size: 0.875rem;
+    }
+
+    .header__boton--administrador {
+        padding: 0.7rem 0.2rem;
     }
 }
 
@@ -124,5 +140,9 @@
     .header__boton {
         box-sizing: border-box;
         padding: 0.75rem 4rem;
+    }
+
+    .header__boton--administrador {
+        padding: 0.7rem 0.2rem;
     }
 }
