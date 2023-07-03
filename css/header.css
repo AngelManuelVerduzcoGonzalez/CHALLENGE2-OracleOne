@@ -91,6 +91,12 @@
     cursor: pointer;
 }
 
+.header__boton--administrador:hover {
+    color:  var(--color-azul-claro);
+    border-color: var(--color-azul-claro);
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px) and (max-width:1024px) {
     .header {
         padding-top: 1rem;
