@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | AluraGeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bases.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/promociones.css">
-    <link rel="stylesheet" href="css/articulos.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/bases.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/promociones.css">
+    <link rel="stylesheet" href="../assets/css/articulos.css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
     <header class="header container">
         <div class="header__caja">
-            <img src="img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
+            <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
             <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
             <span class="header__busqueda"></span>
         </div>
@@ -27,7 +27,7 @@
         <section class="promociones container">
             <h2 class="promociones__titulo">Febrero Promocional</h2>
             <p class="promociones__descripcion">Productos seleccionados con 33% de descuento</p>
-            <button class="promociones__boton">Ver consolas</button>
+            <button class="promociones__boton" onclick="location.href='#consolas'">Ver consolas</button>
         </section>
         <section class="articulos container">
             <div class="articulos__seccion">
@@ -37,37 +37,37 @@
                 </div>
                 <ul class="articulos__lista">
                     <li class="articulos__producto">
-                        <img src="img/starwars1.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/starwars1.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/starwars2.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/starwars2.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/starwars3.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/starwars3.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/starwars4.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/starwars4.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/starwars5.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/starwars5.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/starwars6.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/starwars6.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
@@ -76,42 +76,42 @@
             </div>
             <div class="articulos__seccion">
                 <div class="articulos__principal">
-                    <h4 class="articulos__titulo">Consolas</h4>
+                    <h4 class="articulos__titulo" id="consolas">Consolas</h4>
                     <p class="articulos__enlace"><a href="all-products.html" class="articulos__link--titulo">Ver todo</a></p>
                 </div>
                 <ul class="articulos__lista">
                     <li class="articulos__producto">
-                        <img src="img/consolas1.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/consolas1.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/consolas2.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/consolas2.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/consolas3.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/consolas3.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/consolas4.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/consolas4.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/consolas5.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/consolas5.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/consolas6.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/consolas6.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
@@ -125,37 +125,37 @@
                 </div>
                 <ul class="articulos__lista">
                     <li class="articulos__producto">
-                        <img src="img/diversos1.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/diversos1.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/diversos2.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/diversos2.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/diversos3.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/diversos3.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
                     <li class="articulos__producto">
-                        <img src="img/diversos4.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                        <img src="../assets/img/diversos4.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/diversos5.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/diversos5.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
                     </li>
-                    <li class="articulos__producto articulos__producto--last">
-                        <img src="img/diversos6.svg" alt="Producto de Star Wars" class="articulos__imagen">
+                    <li class="articulos__producto">
+                        <img src="../assets/img/diversos6.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
                         <p class="articulos__precio">$ 60.00</p>
                         <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
@@ -165,7 +165,7 @@
         </section>
         <section class="contacto container">
             <div class="contacto__informacion">
-                <img src="img/Logo.png" alt="Logo de AluraGeek" class="contacto__imagen">
+                <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="contacto__imagen">
                 <div class="contacto__ayuda">
                     <p class="contacto__enlace"><a href="#" class="contacto__link">Quienes somos</a></p>
                     <p class="contacto__enlace"><a href="#" class="contacto__link">Política de privacidad</a></p>
@@ -178,8 +178,14 @@
             <div class="contacto__formulario">
                 <h4 class="contacto__titulo">Hable con nosotros</h4>
                 <form action="" class="contacto__form">
-                    <input id="name" type="text" class="contacto__input" placeholder="Nombre" required>
-                    <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" required></textarea>
+                    <div class="contacto__seccion">
+                        <input id="name" type="text" class="contacto__input" placeholder="Nombre" data-tipo="nombre" required>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
+                    <div class="contacto__seccion">
+                        <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" data-tipo="asunto" required></textarea>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
                     <input type="submit" value="Enviar mensaje" class="contacto__boton">
                 </form>
             </div>
@@ -188,5 +194,6 @@
     <footer class="footer container">
         <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
     </footer>
+    <script src="../validations/app.js" type="module"></script>
 </body>
 </html>

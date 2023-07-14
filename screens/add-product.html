@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | AluraGeek</title>
+    <title>Add Products | AluraGeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bases.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/add-product.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -19,20 +19,26 @@
             <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
             <span class="header__busqueda"></span>
         </div>
+        <button class="header__boton--administrador">Menú Administrador</button>
         <span class="header__busqueda--oculto"></span>
     </header>
     <main>
-        <section class="login container">
-            <h4 class="login__titulo">Iniciar Sesión</h4>
-            <form action="" class="login__form">
-                <input type="email" class="login__input" placeholder="Escriba su correo electrónico" required>
-                <input type="password" class="login__input" placeholder="Escriba su contraseña" required>
-                <input type="submit" value="Entrar" class="login__button">
-            </form>
+        <section class="add-product container">
+            <div class="add-product__container">
+                <h2 class="add-product__titulo">Agregar nuevo producto</h2>
+                <form action="" class="add-product__form">
+                    <input type="text" class="add-product__input" placeholder="URL de imagen" required>
+                    <input type="text" class="add-product__input" placeholder="Categoría" required>
+                    <input type="text" class="add-product__input" placeholder="Nombre del producto" required>
+                    <input type="number" class="add-product__input" placeholder="Precio del producto" required>
+                    <textarea type="text" rows="3" class="add-product__input" placeholder="Descripción del producto" required></textarea>
+                    <input type="submit" class="add-product__button" value="Agregar producto">
+                </form>
+            </div>
         </section>
         <section class="contacto container">
             <div class="contacto__informacion">
-                <img src="img/Logo.png" alt="Logo de AluraGeek" class="contacto__imagen">
+                <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="contacto__imagen">
                 <div class="contacto__ayuda">
                     <p class="contacto__enlace"><a href="#" class="contacto__link">Quienes somos</a></p>
                     <p class="contacto__enlace"><a href="#" class="contacto__link">Política de privacidad</a></p>
@@ -45,8 +51,14 @@
             <div class="contacto__formulario">
                 <h4 class="contacto__titulo">Hable con nosotros</h4>
                 <form action="" class="contacto__form">
-                    <input id="name" type="text" class="contacto__input" placeholder="Nombre" required>
-                    <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" required></textarea>
+                    <div class="contacto__seccion">
+                        <input id="name" type="text" class="contacto__input" placeholder="Nombre" data-tipo="nombre" required>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
+                    <div class="contacto__seccion">
+                        <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" data-tipo="asunto" required></textarea>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
                     <input type="submit" value="Enviar mensaje" class="contacto__boton">
                 </form>
             </div>
@@ -55,5 +67,6 @@
     <footer class="footer container">
         <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
     </footer>
+    <script src="../validations/app.js" type="module"></script>
 </body>
 </html>

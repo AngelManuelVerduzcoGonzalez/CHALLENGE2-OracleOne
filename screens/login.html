@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AluraGeek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/bases.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/toasts.css">
+</head>
+<body>
+    <div id="toast" class="error-toast">
+        No se pudo autenticar. Por favor, revise su usuario y contraseña.
+    </div>
+    <header class="header container">
+        <div class="header__caja">
+            <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
+            <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
+            <span class="header__busqueda"></span>
+        </div>
+        <span class="header__busqueda--oculto"></span>
+    </header>
+    <main>
+        <section class="login container">
+            <h4 class="login__titulo">Iniciar Sesión</h4>
+            <form action="" class="login__form" data-form>
+                <div class="login__field">
+                    <input 
+                        type="email" 
+                        class="login__input" 
+                        placeholder="Escriba su correo electrónico" 
+                        autocomplete="email" 
+                        data-autenticacion="email" 
+                        required
+                    >
+                    <span class="login__error"></span>
+                </div>
+                <div class="login__field">
+                    <input type="password" class="login__input" placeholder="Escriba su contraseña" autocomplete="current-password" data-autenticacion="password" required>
+                    <span class="login__error"></span>
+                </div>
+                <input type="submit" value="Entrar" class="login__button">
+            </form>
+        </section>
+        <section class="contacto container">
+            <div class="contacto__informacion">
+                <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="contacto__imagen">
+                <div class="contacto__ayuda">
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Quienes somos</a></p>
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Política de privacidad</a></p>
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Programa de fidelidad</a></p>
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Nuestras Tiendas</a></p>
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Quiero ser franquiciado</a></p>
+                    <p class="contacto__enlace"><a href="#" class="contacto__link">Anúnice aquí</a></p>
+                </div>
+            </div>
+            <div class="contacto__formulario">
+                <h4 class="contacto__titulo">Hable con nosotros</h4>
+                <form action="" class="contacto__form">
+                    <div class="contacto__seccion">
+                        <input id="name" type="text" class="contacto__input" placeholder="Nombre" data-contacto="nombre" required>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
+                    <div class="contacto__seccion">
+                        <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" data-contacto="asunto" required></textarea>
+                        <span class="contacto__error">Este campo no es valido</span>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" class="contacto__boton">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
+    </footer>
+    <script src="../validations/app.js" type="module"></script>
+    <script src="../controllers/autenticacion-controller.js" type="module"></script>
+</body>
+</html>

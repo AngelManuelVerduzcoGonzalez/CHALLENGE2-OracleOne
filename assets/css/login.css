@@ -17,6 +17,28 @@
     align-items: center;
 }
 
+.login__error {
+    display: none;
+}
+
+.login__field--invalid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login__field--invalid .login__error {
+    display: inline-block;
+    color: var(--color-rojo);
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.login__field--invalid .login__input {
+    border-color: transparent transparent var(--color-rojo) transparent;
+    margin-bottom: 0.2rem;
+}
+
 .login__input {
     margin-bottom: 1rem;
     width: 423px;

@@ -37,10 +37,6 @@
     width: calc((100% / 6) - 10px);
 }
 
-.articulos__producto--last {
-    display: inline;
-}
-
 .articulos__imagen {
     width: 100%;
 }
@@ -70,7 +66,7 @@
         width: calc((100% / 4) - 10px);
     }
     
-    .articulos__producto--last {
+    .articulos__lista li:nth-last-child(-n+2) {
         display: none;
     }
 }
@@ -101,7 +97,7 @@
         padding-bottom: 1rem;
     }
 
-    .articulos__producto--last {
+    .articulos__lista li:nth-last-child(-n+2) {
         display: none;
     }
 }

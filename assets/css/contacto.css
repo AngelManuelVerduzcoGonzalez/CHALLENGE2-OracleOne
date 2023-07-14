@@ -40,6 +40,22 @@
     padding-bottom: 0.5rem;
 }
 
+.contacto__seccion {
+    width: 100%;
+}
+
+.contacto__seccion--invalido .contacto__error {
+    display: inline-block;
+    color: var(--color-rojo);
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.contacto__seccion--invalido .contacto__input {
+    margin-bottom: 0.2rem;
+    border-color: transparent transparent var(--color-rojo) transparent;
+}
+
 .contacto__input {
     width: 100%;
     box-sizing: border-box;
@@ -62,6 +78,10 @@
 
 .contacto__input::placeholder {
     color: var(--color-gris);
+}
+
+.contacto__error {
+    display: none;
 }
 
 .contacto__boton {

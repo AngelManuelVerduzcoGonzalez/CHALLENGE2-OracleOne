@@ -1,0 +1,28 @@
+.error-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4d4d; /* Color rojo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .error-toast.show {
+    display: block;
+    animation: fadeOut 5s ease-in;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
