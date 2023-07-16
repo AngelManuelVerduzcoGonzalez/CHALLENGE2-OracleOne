@@ -23,6 +23,22 @@
     align-items: center;
 }
 
+.add-product__field {
+    width: 100%;
+}
+
+.add-product__field--invalido .add-product__error {
+    display: inline-block;
+    color: var(--color-rojo);
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.add-product__field--invalido .add-product__input {
+    border-color: transparent transparent var(--color-rojo) transparent;
+    margin-bottom: 0.2rem;
+}
+
 .add-product__input {
     width: 559px;
     box-sizing: border-box;
@@ -42,6 +58,14 @@
 
 .add-product__input:focus::placeholder {
     color: var(--color-azul);
+}
+
+.add-product__input--file {
+    color: var(--color-blanco);
+}
+
+.add-product__error {
+    display: none;
 }
 
 .add-product__button {

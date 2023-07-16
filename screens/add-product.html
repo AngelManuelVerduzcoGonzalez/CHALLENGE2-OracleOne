@@ -5,33 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Products | AluraGeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bases.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/add-product.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/bases.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/add-product.css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/toasts.css">
 </head>
 <body>
+    <div id="toastError" class="error-toast">
+        No fue posible añadir el producto, por favor intentelo de nuevo más tarde.
+    </div>
+    <div id="toastOk" class="ok-toast">
+        El producto fue añadido correctamente.
+    </div>
     <header class="header container">
         <div class="header__caja">
-            <img src="img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
+            <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
             <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
             <span class="header__busqueda"></span>
         </div>
-        <button class="header__boton--administrador">Menú Administrador</button>
+        <button class="header__boton--administrador" onclick="location.href='all-products.html'">Menú Administrador</button>
         <span class="header__busqueda--oculto"></span>
     </header>
     <main>
         <section class="add-product container">
             <div class="add-product__container">
                 <h2 class="add-product__titulo">Agregar nuevo producto</h2>
-                <form action="" class="add-product__form">
-                    <input type="text" class="add-product__input" placeholder="URL de imagen" required>
-                    <input type="text" class="add-product__input" placeholder="Categoría" required>
-                    <input type="text" class="add-product__input" placeholder="Nombre del producto" required>
-                    <input type="number" class="add-product__input" placeholder="Precio del producto" required>
-                    <textarea type="text" rows="3" class="add-product__input" placeholder="Descripción del producto" required></textarea>
+                <form action="" class="add-product__form" data-form>
+                    <div class="add-product__field">
+                        <input type="text" class="add-product__input" minlength="20" placeholder="URL de imagen" data-producto="url" required>
+                        <span class="add-product__error"></span>
+                    </div>
+                    <div class="add-product__field">
+                        <input type="text" class="add-product__input" placeholder="Categoría" data-producto="categoria" required>
+                        <span class="add-product__error"></span>
+                    </div>
+                    <div class="add-product__field">
+                        <input type="text" class="add-product__input" maxlength="20" placeholder="Nombre del producto" data-producto="nombre" required>
+                        <span class="add-product__error"></span>
+                    </div>
+                    <div class="add-product__field">
+                        <input type="number" class="add-product__input" placeholder="Precio del producto" data-producto="precio" required>
+                        <span class="add-product__error"></span>
+                    </div>
+                    <div class="add-product__field">
+                        <textarea type="text" rows="3" minlength="20" maxlength="150" class="add-product__input" placeholder="Descripción del producto" data-producto="descripcion" required></textarea>
+                        <span class="add-product__error"></span>
+                    </div>
                     <input type="submit" class="add-product__button" value="Agregar producto">
                 </form>
             </div>
@@ -52,11 +74,11 @@
                 <h4 class="contacto__titulo">Hable con nosotros</h4>
                 <form action="" class="contacto__form">
                     <div class="contacto__seccion">
-                        <input id="name" type="text" class="contacto__input" placeholder="Nombre" data-tipo="nombre" required>
+                        <input id="name" type="text" class="contacto__input" placeholder="Nombre" data-contacto="nombre" required>
                         <span class="contacto__error">Este campo no es valido</span>
                     </div>
                     <div class="contacto__seccion">
-                        <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" data-tipo="asunto" required></textarea>
+                        <textarea type="text" rows="3" class="contacto__input" placeholder="Escribe tu mensaje" data-contacto="asunto" required></textarea>
                         <span class="contacto__error">Este campo no es valido</span>
                     </div>
                     <input type="submit" value="Enviar mensaje" class="contacto__boton">
@@ -67,6 +89,8 @@
     <footer class="footer container">
         <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="../validations/app.js" type="module"></script>
+    <script src="../controllers/agregarProducto-controller.js" type="module"></script>
 </body>
 </html>

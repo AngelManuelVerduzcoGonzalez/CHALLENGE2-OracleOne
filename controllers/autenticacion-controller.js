@@ -1,5 +1,5 @@
 import { clientServices } from "../service/client-service.js";
-import { mostrarErrorToast } from "../controllers/toast-controller.js";
+import { toasts } from "../controllers/toast-controller.js";
 
 const formulario = document.querySelector("[data-form]");
 var perfilesLista = []; 
@@ -35,7 +35,7 @@ formulario.addEventListener("submit", (evento) => {
     if(autenticacion) {
         window.location.href="../screens/all-products.html"
     } else {
-        mostrarErrorToast();
+        toasts.mostrarErrorToast();
     }
     
 });
