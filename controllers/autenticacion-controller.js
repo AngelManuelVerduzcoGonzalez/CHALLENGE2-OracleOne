@@ -7,7 +7,7 @@ var perfilesLista = [];
 const obtenerInformacion = async () => {
     
     try {
-        const perfiles = await clientServices.autenticarUsuario();
+        const perfiles = await clientServices.obtenerUsuarios();
         if(perfiles) {
             perfilesLista.push(...perfiles);
         } else {

@@ -48,7 +48,7 @@
     font-family: var(--raleway);
     border-radius: 4px;
     padding: 1rem 0.5rem;
-    color: var(--color-gris);
+    color: var(--color-gris-oscuro);
     font-weight: 400;
     box-sizing: border-box;
 }

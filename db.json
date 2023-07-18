@@ -14,7 +14,7 @@
       "url": "https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/711719510437_2.jpg?scale=500&qlty=75",
       "categoria": "Consolas",
       "nombre": "Play Station 4 PRO",
-      "precio": "$8000.00",
+      "precio": "8000.00",
       "descripcion": "Consola Play Station 4 PRO de 1Tb de almacenamiento",
       "id": 1
     },
@@ -27,12 +27,20 @@
       "id": "3e181ede-845e-4810-a432-085006620c6c"
     },
     {
-      "url": ".v hbvusdbdñ dkd ndn a.,fv fe",
-      "nombre": "d j b bkefb f",
-      "categoria": "vrkv rhv ",
-      "precio": "74736",
-      "descripcion": ". hjvshvbs,dm dncbdjvslnñkb",
-      "id": "113289e6-b316-4535-8eee-9bdef4dc7dab"
+      "url": "https://m.media-amazon.com/images/I/71kfz16POkS._AC_UF1000,1000_QL80_.jpg",
+      "nombre": "Nintendo Switch",
+      "categoria": "Consolas",
+      "precio": "7000.00",
+      "descripcion": "Consola Nintendo Switch",
+      "id": "e80000ad-0efe-4223-8473-f8f33081a89b"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/519nTZ6iNSL._AC_UF894,1000_QL80_.jpg",
+      "nombre": "Figura de Bachira",
+      "categoria": "Diversos",
+      "precio": "800.00",
+      "descripcion": "Figura de Meguru Bachira del anime Blue Lock",
+      "id": "f786b984-edfc-42b7-b4df-e8d6238e99af"
     }
   ]
 }

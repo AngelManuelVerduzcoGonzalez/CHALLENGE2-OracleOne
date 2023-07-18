@@ -35,7 +35,7 @@
                     <h4 class="articulos__titulo">Star Wars</h4>
                     <p class="articulos__enlace"><a href="all-products.html" class="articulos__link--titulo">Ver todo</a></p>
                 </div>
-                <ul class="articulos__lista">
+                <ul class="articulos__lista" data-lista="starwars">
                     <li class="articulos__producto">
                         <img src="../assets/img/starwars1.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
@@ -79,25 +79,7 @@
                     <h4 class="articulos__titulo" id="consolas">Consolas</h4>
                     <p class="articulos__enlace"><a href="all-products.html" class="articulos__link--titulo">Ver todo</a></p>
                 </div>
-                <ul class="articulos__lista">
-                    <li class="articulos__producto">
-                        <img src="../assets/img/consolas1.svg" alt="Producto de Star Wars" class="articulos__imagen">
-                        <h4 class="articulos__nombre">Producto XYZ</h4>
-                        <p class="articulos__precio">$ 60.00</p>
-                        <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
-                    </li>
-                    <li class="articulos__producto">
-                        <img src="../assets/img/consolas2.svg" alt="Producto de Star Wars" class="articulos__imagen">
-                        <h4 class="articulos__nombre">Producto XYZ</h4>
-                        <p class="articulos__precio">$ 60.00</p>
-                        <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
-                    </li>
-                    <li class="articulos__producto">
-                        <img src="../assets/img/consolas3.svg" alt="Producto de Star Wars" class="articulos__imagen">
-                        <h4 class="articulos__nombre">Producto XYZ</h4>
-                        <p class="articulos__precio">$ 60.00</p>
-                        <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
-                    </li>
+                <ul class="articulos__lista" data-lista="consolas">
                     <li class="articulos__producto">
                         <img src="../assets/img/consolas4.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
@@ -123,13 +105,7 @@
                     <h4 class="articulos__titulo">Diversos</h4>
                     <p class="articulos__enlace"><a href="all-products.html" class="articulos__link--titulo">Ver todo</a></p>
                 </div>
-                <ul class="articulos__lista">
-                    <li class="articulos__producto">
-                        <img src="../assets/img/diversos1.svg" alt="Producto de Star Wars" class="articulos__imagen">
-                        <h4 class="articulos__nombre">Producto XYZ</h4>
-                        <p class="articulos__precio">$ 60.00</p>
-                        <p class="articulos__enlace"><a href="" class="articulos__link">Ver producto</a></p>
-                    </li>
+                <ul class="articulos__lista" data-lista="diversos">
                     <li class="articulos__producto">
                         <img src="../assets/img/diversos2.svg" alt="Producto de Star Wars" class="articulos__imagen">
                         <h4 class="articulos__nombre">Producto XYZ</h4>
@@ -195,5 +171,6 @@
         <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
     </footer>
     <script src="../validations/app.js" type="module"></script>
+    <script src="../controllers/mostrarProductos.js" type="module"></script>
 </body>
 </html>

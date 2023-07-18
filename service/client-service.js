@@ -1,5 +1,9 @@
-const autenticarUsuario = () => {
+const obtenerUsuarios = () => {
     return fetch("http://localhost:3000/perfil").then( (respuesta) => respuesta.json())
+}
+
+const obtenerProductos = () => {
+    return fetch("http://localhost:3000/producto").then( (respuesta) => respuesta.json() )
 }
 
 const agregarProducto = (url, nombre, categoria, precio, descripcion) => {
@@ -15,6 +19,7 @@ const agregarProducto = (url, nombre, categoria, precio, descripcion) => {
 }; 
 
 export const clientServices = {
-    autenticarUsuario,
+    obtenerUsuarios,
+    obtenerProductos,
     agregarProducto,
 }
