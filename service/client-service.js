@@ -18,8 +18,15 @@ const agregarProducto = (url, nombre, categoria, precio, descripcion) => {
     .catch(err => console.log(err))
 }; 
 
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+        method: "DELETE",
+    })
+}
+
 export const clientServices = {
     obtenerUsuarios,
     obtenerProductos,
     agregarProducto,
+    eliminarProducto,
 }

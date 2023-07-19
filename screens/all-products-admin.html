@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products | AluraGeek</title>
+    <title>All Products (Admin) | AluraGeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/bases.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/all-products.css">
-    <link rel="stylesheet" href="../assets/css/articulos.css">
+    <link rel="stylesheet" href="../assets/css/all-products-admin.css">
     <link rel="stylesheet" href="../assets/css/contacto.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
@@ -27,6 +26,7 @@
         <section class="all-products container">
             <div class="all-products__principal">
                 <h4 class="all-products__titulo">Todos los productos</h4>
+                <button class="all-products__button" onclick="location.href='add-product.html'">Agregar producto</button>
             </div>
             <ul class="all-products__lista" data-lista></ul>
         </section>
@@ -61,7 +61,7 @@
     <footer class="footer container">
         <p class="footer__texto">Creado por Angel Manuel Verduzco González <br> 2023</p>
     </footer>
-    <script src="../controllers/productosTodo-controller.js" type="module"></script>
+    <script src="../controllers/productosAdmin-controller.js" type="module"></script>
     <script src="../validations/app.js" type="module"></script>
 </body>
 </html>

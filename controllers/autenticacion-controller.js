@@ -33,7 +33,7 @@ formulario.addEventListener("submit", (evento) => {
         }
     })
     if(autenticacion) {
-        window.location.href="../screens/all-products.html"
+        window.location.href="../screens/all-products-admin.html"
     } else {
         toasts.mostrarErrorToast();
     }
