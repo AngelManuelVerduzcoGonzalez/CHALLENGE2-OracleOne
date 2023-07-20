@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Products | AluraGeek</title>
+    <title>Update Product | AluraGeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/bases.css">
@@ -32,7 +32,7 @@
     <main>
         <section class="add-product container">
             <div class="add-product__container">
-                <h2 class="add-product__titulo">Agregar nuevo producto</h2>
+                <h2 class="add-product__titulo">Actualizar producto</h2>
                 <form action="" class="add-product__form" data-form>
                     <div class="add-product__field">
                         <input type="text" class="add-product__input" minlength="20" placeholder="URL de imagen" data-producto="url" required>
@@ -54,7 +54,7 @@
                         <textarea type="text" rows="3" minlength="20" maxlength="150" class="add-product__input" placeholder="Descripción del producto" data-producto="descripcion" required></textarea>
                         <span class="add-product__error"></span>
                     </div>
-                    <input type="submit" class="add-product__button" value="Agregar producto">
+                    <input type="submit" class="add-product__button" value="Actualizar producto">
                 </form>
             </div>
         </section>
@@ -91,6 +91,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="../validations/app.js" type="module"></script>
-    <script src="../controllers/agregarProducto-controller.js" type="module"></script>
+    <script src="../controllers/actualizarProducto-controller.js" type="module"></script>
 </body>
 </html>

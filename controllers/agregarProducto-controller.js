@@ -14,12 +14,12 @@ formulario.addEventListener("submit", async (evento) => {
     try {
         const respuesta = await clientServices.agregarProducto(url, nombre, categoria, precio, descripcion);
         if(respuesta.ok) {
-            toasts.mostrarOkToast();
+            toasts.mostrarOkToast("El producto fue añadido correctamente");
         } else {
             throw new Error();
         }
     } catch(error) {
-        toasts.mostrarErrorToast();
+        toasts.mostrarErrorToast("Ocurrió un error al intentar añadir el producto. Por favor intentalo de nuevo más tarde. ");
     }
 
 })

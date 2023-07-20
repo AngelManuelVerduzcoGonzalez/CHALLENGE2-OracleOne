@@ -12,9 +12,9 @@
   "producto": [
     {
       "url": "https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/711719510437_2.jpg?scale=500&qlty=75",
-      "categoria": "Consolas",
       "nombre": "Play Station 4 PRO",
-      "precio": "8000.00",
+      "categoria": "Consolas",
+      "precio": "6500.00",
       "descripcion": "Consola Play Station 4 PRO de 1Tb de almacenamiento",
       "id": 1
     },
@@ -28,10 +28,10 @@
     },
     {
       "url": "https://m.media-amazon.com/images/I/71kfz16POkS._AC_UF1000,1000_QL80_.jpg",
-      "nombre": "Nintendo Switch",
+      "nombre": "Nintendo Switch OLED",
       "categoria": "Consolas",
-      "precio": "7000.00",
-      "descripcion": "Consola Nintendo Switch",
+      "precio": "8500.00",
+      "descripcion": "Consola Nintendo Switch OLED",
       "id": "e80000ad-0efe-4223-8473-f8f33081a89b"
     },
     {
