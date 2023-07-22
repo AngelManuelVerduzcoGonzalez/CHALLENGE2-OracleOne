@@ -14,16 +14,13 @@
     <link rel="stylesheet" href="../assets/css/toasts.css">
 </head>
 <body>
-    <div id="toastError" class="error-toast">
-        No se pudo autenticar. Por favor, revise su usuario y contraseña.
-    </div>
     <header class="header container">
         <div class="header__caja">
             <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
-            <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
-            <span class="header__busqueda"></span>
+            <input type="text" class="header__input" placeholder="¿Qué deseas buscar?" data-input>
+            <span class="header__busqueda" data-search></span>
         </div>
-        <span class="header__busqueda--oculto"></span>
+        <span class="header__busqueda--oculto" data-search></span>
     </header>
     <main>
         <section class="login container">

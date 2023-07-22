@@ -30,12 +30,29 @@
 
 .articulos__lista {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.articulos__lista--full {
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .articulos__producto {
     width: calc((100% / 6) - 10px);
-    overflow: hidden;
+    margin-left: 0.875rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.articulos__lista li:nth-child(1) {
+    margin-left: 0;
+}
+
+.articulos__producto--hide {
+    display: none;
 }
 
 .articulos__imagen {

@@ -14,20 +14,14 @@
     <link rel="stylesheet" href="../assets/css/toasts.css">
 </head>
 <body>
-    <div id="toastError" class="error-toast">
-        No fue posible añadir el producto, por favor intentelo de nuevo más tarde.
-    </div>
-    <div id="toastOk" class="ok-toast">
-        El producto fue añadido correctamente.
-    </div>
     <header class="header container">
         <div class="header__caja">
             <img src="../assets/img/Logo.png" alt="Logo de AluraGeek" class="header__imagen">
-            <input type="text" class="header__input" placeholder="¿Qué deseas buscar?">
-            <span class="header__busqueda"></span>
+            <input type="text" class="header__input" placeholder="¿Qué deseas buscar?" data-input>
+            <span class="header__busqueda" data-search></span>
         </div>
         <button class="header__boton--administrador" onclick="location.href='all-products-admin.html'">Menú Administrador</button>
-        <span class="header__busqueda--oculto"></span>
+        <span class="header__busqueda--oculto" data-search></span>
     </header>
     <main>
         <section class="add-product container">
@@ -43,7 +37,7 @@
                         <span class="add-product__error"></span>
                     </div>
                     <div class="add-product__field">
-                        <input type="text" class="add-product__input" maxlength="20" placeholder="Nombre del producto" data-producto="nombre" required>
+                        <input type="text" class="add-product__input" maxlength="30" placeholder="Nombre del producto" data-producto="nombre" required>
                         <span class="add-product__error"></span>
                     </div>
                     <div class="add-product__field">

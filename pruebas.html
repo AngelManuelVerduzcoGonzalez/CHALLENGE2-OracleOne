@@ -7,21 +7,27 @@
 </head>
 <body>
     <div class="contenedor">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae nisl at mi finibus malesuada. Fusce
-          hendrerit nunc sit amet turpis varius, nec aliquam risus posuere. Integer consectetur mauris vitae nisl
-          fringilla, vel posuere sapien bibendum. Nunc sit amet turpis vel justo fermentum bibendum eget nec turpis. Ut
-          volutpat mauris sed justo mattis, id vestibulum nunc varius. Sed non enim facilisis, suscipit felis in,
-          ultrices felis. Nunc aliquet bibendum felis, ac viverra sapien tincidunt vel.
-        </p>
-    </div>
-    <style>
-        .contenedor {
-  width: 700px;
-  height: 100px;
-  overflow-x: hidden; /* Ocultar el contenido que excede la altura */
-  border: 1px solid #ccc;
+        <p>Hijo 1</p>
+        <p>Hijo 2</p>
+        <p>Hijo 3</p>
+      </div>
+
+      <style>
+      /* Estilos para el primer hijo */
+.contenedor p:nth-child(1) {
+  background-color: blue;
 }
+
+/* Estilos para el segundo hijo */
+.contenedor p:nth-child(2) {
+  background-color: green;
+}
+
+/* Estilos para el tercer hijo */
+.contenedor p:nth-child(3) {
+  background-color: yellow;
+}
+
 
     </style>  
 </body>

@@ -40,6 +40,10 @@ const actualizarProducto = (url, nombre, categoria, precio, descripcion, id) => 
     .catch(err => console.log(err))
 }
 
+const detalleCoincidencia = (nombre) => {
+    return fetch(`http://localhost:3000/producto/${nombre}`).then( (respuesta) => respuesta.json())
+}
+
 export const clientServices = {
     obtenerUsuarios,
     obtenerProductos,
@@ -47,4 +51,5 @@ export const clientServices = {
     eliminarProducto,
     detalleProducto,
     actualizarProducto,
+    detalleCoincidencia,
 }

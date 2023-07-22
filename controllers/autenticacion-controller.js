@@ -35,7 +35,19 @@ formulario.addEventListener("submit", (evento) => {
     if(autenticacion) {
         window.location.href="../screens/all-products-admin.html"
     } else {
-        toasts.mostrarErrorToast();
+        toasts.mostrarErrorToast("El usuario y/o contraseña son incorrectos, por favor intentelo de nuevo");
     }
     
+});
+
+// Codigo para la barra de busqueda//
+
+const search = document.querySelectorAll("[data-search]");
+
+search.forEach(elemento => {
+    elemento.addEventListener("click", () => {
+        const input = document.querySelector('[data-input]').value;
+        window.location.href = `search-product.html?search=${input}`
+        buscarProducto("Play Station")
+    })
 });

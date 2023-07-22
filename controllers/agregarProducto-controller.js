@@ -22,4 +22,15 @@ formulario.addEventListener("submit", async (evento) => {
         toasts.mostrarErrorToast("Ocurrió un error al intentar añadir el producto. Por favor intentalo de nuevo más tarde. ");
     }
 
-})
+});
+
+// Codigo para la barra de busqueda//
+
+const search = document.querySelectorAll("[data-search]");
+
+search.forEach(elemento => {
+    elemento.addEventListener("click", () => {
+        const input = document.querySelector('[data-input]').value;
+        window.location.href = `search-product.html?search=${input}`
+    })
+});

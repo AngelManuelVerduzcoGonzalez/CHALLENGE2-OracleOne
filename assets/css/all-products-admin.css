@@ -36,18 +36,25 @@
 
 .all-products__lista {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.all-products__lista--full {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .all-products__producto {
     width: calc((100% / 6) - 10px);
+    margin-left: 0.875rem;
     padding-bottom: 4rem;
     position: relative;
 }
 
-.all-products__producto--last {
-    display: inline;
+.all-products__producto--primero {
+    margin-left: 0;
 }
 
 .all-products__imagen {

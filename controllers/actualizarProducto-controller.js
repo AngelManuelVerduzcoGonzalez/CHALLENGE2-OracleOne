@@ -57,4 +57,17 @@ formulario.addEventListener("submit", (evento) => {
     .catch(() => {
         toasts.mostrarErrorToast("Hubo un problema al intentar actualizar el producto. Por favor intentalo de nuevo más tarde")
     } )
-})
+});
+
+
+// Codigo para la barra de busqueda//
+
+const search = document.querySelectorAll("[data-search]");
+
+search.forEach(elemento => {
+    elemento.addEventListener("click", () => {
+        const input = document.querySelector('[data-input]').value;
+        window.location.href = `search-product.html?search=${input}`
+        buscarProducto("Play Station")
+    })
+});

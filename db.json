@@ -41,6 +41,30 @@
       "precio": "12000.00",
       "descripcion": "Consola Play Station 5 con lectora de discos",
       "id": "f2e31557-a8d3-4e13-ae07-536581e6a555"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/51U4mmDxThL.jpg",
+      "nombre": "Xbox One S",
+      "categoria": "Consolas",
+      "precio": "6000.00",
+      "descripcion": "Consola Xbox One S de 500gb",
+      "id": "d60ecb14-9c9e-44aa-ba11-2cc46bd459aa"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/517iqqt5RdL.jpg",
+      "nombre": "Steam Deck",
+      "categoria": "Consolas",
+      "precio": "10000.00",
+      "descripcion": "Consola Steam Deck de 64gb",
+      "id": "7dc6b483-4c2b-4650-abae-dc25cfa72933"
+    },
+    {
+      "url": "https://i.ebayimg.com/images/g/buAAAOSw-4ZkO7Z4/s-l1600.jpg",
+      "nombre": "Play Station 4 TLOU II Edition",
+      "categoria": "Consolas",
+      "precio": "10000.00",
+      "descripcion": "Consola Play Station 4 edición especial del juego The Last Of Us II",
+      "id": "7ba0fcce-91ca-4673-bbc1-e0fa9fb2cb69"
     }
   ]
 }
