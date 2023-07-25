@@ -1,4 +1,5 @@
 import { clientServices } from "../service/client-service.js";
+import { listas } from "./listas-controller.js";
 
 const mostrarProducto = (url, nombre, precio, id) => {
 
@@ -34,8 +35,8 @@ clientServices.obtenerProductos()
     data.forEach( (producto) => {
         const nuevoProducto = mostrarProducto(producto.url, producto.nombre, producto.precio, producto.id);
         lista.appendChild(nuevoProducto);
+        listas.acomodarLista();
     })
-    acomodarLista();
 })
 .catch((err) => {
     console.log(err)
@@ -50,23 +51,8 @@ search.forEach(elemento => {
     elemento.addEventListener("click", () => {
         const input = document.querySelector('[data-input]').value;
         window.location.href = `search-product.html?search=${input}`
-        buscarProducto("Play Station")
     })
 });
 
 // Acomodar estilos de la lista
-const acomodarLista = () => {
-    const hijos = lista.children;
-    const numHijos = lista.children.length;
-    console.log(numHijos);
-
-    if(numHijos % 6 == 0){
-        lista.classList.add("all-products__lista--full")
-    }
-
-    for (let i = 0; i < hijos.length; i++) {
-        if ((i + 1) % 6 === 0 || i === 0) {
-          hijos[i].classList.add('all-products__producto--primero');
-        }
-      }
-}
+window.addEventListener("resize", listas.acomodarLista);

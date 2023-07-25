@@ -94,13 +94,8 @@
     }
 
     .all-products__producto {
-        width: calc((100% / 4) - 10px);
+        width: calc((100% / 4) - 12px);
         padding-bottom: 2rem;
-    }
-    
-    .all-products__lista li:last-child {
-        margin-right: auto;
-        padding-left: 0.875rem;
     }
 }
 
@@ -128,7 +123,7 @@
     }
 
     .all-products__producto {
-        width: calc((100% / 2) - 10px);
+        width: calc((100% / 2) - 12px);
         padding-bottom: 1rem;
     }
 }

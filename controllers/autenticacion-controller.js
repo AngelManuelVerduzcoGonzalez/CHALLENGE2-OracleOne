@@ -48,6 +48,5 @@ search.forEach(elemento => {
     elemento.addEventListener("click", () => {
         const input = document.querySelector('[data-input]').value;
         window.location.href = `search-product.html?search=${input}`
-        buscarProducto("Play Station")
     })
 });
