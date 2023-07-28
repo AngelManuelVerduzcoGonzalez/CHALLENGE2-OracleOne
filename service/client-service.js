@@ -1,13 +1,13 @@
 const obtenerUsuarios = () => {
-    return fetch("http://localhost:3000/perfil").then( (respuesta) => respuesta.json())
+    return fetch("https://alurageek-c1613-default-rtdb.firebaseio.com/perfil").then( (respuesta) => respuesta.json())
 }
 
 const obtenerProductos = () => {
-    return fetch("http://localhost:3000/producto").then( (respuesta) => respuesta.json() )
+    return fetch("https://alurageek-c1613-default-rtdb.firebaseio.com/producto").then( (respuesta) => respuesta.json() )
 }
 
 const agregarProducto = (url, nombre, categoria, precio, descripcion) => {
-    return fetch("http://localhost:3000/producto", {
+    return fetch("https://alurageek-c1613-default-rtdb.firebaseio.com/producto", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -19,17 +19,17 @@ const agregarProducto = (url, nombre, categoria, precio, descripcion) => {
 }; 
 
 const eliminarProducto = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+    return fetch(`https://alurageek-c1613-default-rtdb.firebaseio.com/producto/${id}`, {
         method: "DELETE",
     })
 }
 
 const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`).then( (respuesta) => respuesta.json())
+    return fetch(`https://alurageek-c1613-default-rtdb.firebaseio.com/producto/${id}`).then( (respuesta) => respuesta.json())
 }
 
 const actualizarProducto = (url, nombre, categoria, precio, descripcion, id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+    return fetch(`https://alurageek-c1613-default-rtdb.firebaseio.com/producto/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -41,7 +41,7 @@ const actualizarProducto = (url, nombre, categoria, precio, descripcion, id) => 
 }
 
 const detalleCoincidencia = (nombre) => {
-    return fetch(`http://localhost:3000/producto/${nombre}`).then( (respuesta) => respuesta.json())
+    return fetch(`https://alurageek-c1613-default-rtdb.firebaseio.com/producto/${nombre}`).then( (respuesta) => respuesta.json())
 }
 
 export const clientServices = {

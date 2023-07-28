@@ -33,9 +33,11 @@ clientServices.obtenerProductos()
             }
         }
         const lista = document.querySelector(`[data-lista="${categoriaEncontrada}"]`)
-        const nuevoProducto = mostrarProducto(producto.url, producto.nombre, producto.precio);
-        lista.appendChild(nuevoProducto)
-        listas.acomodarListaHome(lista);
+        if(lista.children.length < 6){
+            const nuevoProducto = mostrarProducto(producto.url, producto.nombre, producto.precio);
+            lista.appendChild(nuevoProducto)
+            listas.acomodarListaHome(lista);
+        }
     })
 })
 .catch(err => {
@@ -45,14 +47,30 @@ clientServices.obtenerProductos()
 
 // Codigo para la barra de busqueda//
 
-const search = document.querySelectorAll("[data-search]");
+const search = document.querySelector("[data-search]");
 
-search.forEach(elemento => {
-    elemento.addEventListener("click", () => {
+search.addEventListener("click", () => {
         const input = document.querySelector('[data-input]').value;
         window.location.href = `search-product.html?search=${input}`
-    })
+    });
+
+const icon = document.querySelector(".header__busqueda--oculto")
+const input = document.querySelector(".header__input")
+const button = document.querySelector(".header__boton")
+icon.addEventListener("click", () => {
+    icon.style.display = "none"
+    search.style.display = "inline"
+    input.style.display = "inline"
+    button.style.display = "none"
+    input.focus();
 });
+
+input.addEventListener("blur", () => {
+    icon.style.display = "inline"
+    search.style.display = "none"
+    input.style.display = "none"
+    button.style.display = "inline"
+})
 
 //Codigo para acomodar listas 
 window.addEventListener("resize", ajustarCategorias);

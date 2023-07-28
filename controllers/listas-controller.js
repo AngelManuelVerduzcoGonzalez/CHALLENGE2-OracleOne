@@ -69,13 +69,10 @@ const acomodarListaHome = (lista) => {
 
     if(ancho >= 1024) {
         for(let i = 0; i < hijos.length; i++){
-            if(i >= 6){
-                hijos[i].classList.add("articulos__producto--hide")
-                hijos[i].classList.remove("articulos__producto")
-            } else {
-                hijos[i].classList.add("articulos__producto")
-                hijos[i].classList.remove("articulos__producto--hide")
-            }
+
+            hijos[i].classList.add("articulos__producto")
+            hijos[i].classList.remove("artiuclos__producto--primero")
+
         }
     } else if(ancho >= 768) {
 

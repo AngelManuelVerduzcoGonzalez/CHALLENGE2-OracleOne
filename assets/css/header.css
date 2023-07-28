@@ -133,6 +133,7 @@
 
     .header__busqueda {
         display: none;
+        height: 1.87rem;
     }
 
     .header__busqueda--oculto {
@@ -141,6 +142,9 @@
 
     .header__input {
         display: none;
+        height: 30px;
+        padding: 0.5rem;
+        margin-left: 1rem;
     }
 
     .header__boton {

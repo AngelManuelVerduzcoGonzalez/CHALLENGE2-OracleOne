@@ -45,14 +45,27 @@ clientServices.obtenerProductos()
 
 // Codigo para la barra de busqueda//
 
-const search = document.querySelectorAll("[data-search]");
+const search = document.querySelector("[data-search]");
 
-search.forEach(elemento => {
-    elemento.addEventListener("click", () => {
+search.addEventListener("click", () => {
         const input = document.querySelector('[data-input]').value;
         window.location.href = `search-product.html?search=${input}`
-    })
+    });
+
+const icon = document.querySelector(".header__busqueda--oculto")
+const input = document.querySelector(".header__input")
+icon.addEventListener("click", () => {
+    icon.style.display = "none"
+    search.style.display = "inline"
+    input.style.display = "inline"
+    input.focus();
 });
+
+input.addEventListener("blur", () => {
+    icon.style.display = "inline"
+    search.style.display = "none"
+    input.style.display = "none"
+})
 
 // Acomodar estilos de la lista
 window.addEventListener("resize", listas.acomodarLista);
