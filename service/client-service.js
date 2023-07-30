@@ -1,5 +1,5 @@
 const obtenerUsuarios = () => {
-    return fetch("https://alurageek-k5zp.onrender.com//perfil").then( (respuesta) => respuesta.json())
+    return fetch("https://alurageek-k5zp.onrender.com/perfil").then( (respuesta) => respuesta.json())
 }
 
 const obtenerProductos = () => {
