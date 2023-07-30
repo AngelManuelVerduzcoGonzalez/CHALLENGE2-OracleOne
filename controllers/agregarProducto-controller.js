@@ -33,20 +33,43 @@ search.addEventListener("click", () => {
         window.location.href = `search-product.html?search=${input}`
     });
 
-const icon = document.querySelector(".header__busqueda--oculto")
-const input = document.querySelector(".header__input")
-const button = document.querySelector(".header__boton--administrador")
-icon.addEventListener("click", () => {
-    icon.style.display = "none"
-    search.style.display = "inline"
-    input.style.display = "inline"
-    button.style.display = "none"
-    input.focus();
-});
+function barraBusqueda() {
+    if(window.innerWidth < 768) {
+        const icon = document.querySelector(".header__busqueda--oculto")
+        const input = document.querySelector(".header__input")
+        const button = document.querySelector(".header__boton--administrador")
+        icon.style.display = "inline"
+        search.style.display = "none"
+        input.style.display = "none"
+        button.style.display = "inline"
 
-input.addEventListener("blur", () => {
-    icon.style.display = "inline"
-    search.style.display = "none"
-    input.style.display = "none"
-    button.style.display = "inline"
-})
+        icon.addEventListener("click", () => {
+            icon.style.display = "none"
+            search.style.display = "inline"
+            input.style.display = "inline"
+            button.style.display = "none"
+            input.focus();
+        });
+        
+        input.addEventListener("blur", () => {
+            setTimeout(() => {
+                icon.style.display = "inline"
+                search.style.display = "none"
+                input.style.display = "none"
+                button.style.display = "inline"
+            }, 100) 
+        })
+    } else {
+        const icon = document.querySelector(".header__busqueda--oculto")
+        const input = document.querySelector(".header__input")
+        const button = document.querySelector(".header__boton--administrador")
+        icon.style.display = "none"
+        search.style.display = "inline"
+        input.style.display = "inline"
+        button.style.display = "inline"
+    }
+}
+
+window.addEventListener("resize", barraBusqueda);
+   
+

@@ -49,17 +49,36 @@ search.addEventListener("click", () => {
         window.location.href = `search-product.html?search=${input}`
     });
 
-const icon = document.querySelector(".header__busqueda--oculto")
-const input = document.querySelector(".header__input")
-icon.addEventListener("click", () => {
-    icon.style.display = "none"
-    search.style.display = "inline"
-    input.style.display = "inline"
-    input.focus();
-});
+function barraBusqueda() {
+    if(window.innerWidth < 768) {
+        const icon = document.querySelector(".header__busqueda--oculto");
+        const input = document.querySelector(".header__input");
+        icon.style.display = "inline"
+        search.style.display = "none"
+        input.style.display = "none"
 
-input.addEventListener("blur", () => {
-    icon.style.display = "inline"
-    search.style.display = "none"
-    input.style.display = "none"
-})
+        icon.addEventListener("click", () => {
+            icon.style.display = "none"
+            search.style.display = "inline"
+            input.style.display = "inline"
+            input.focus();
+        });
+        
+        input.addEventListener("blur", () => {
+            setTimeout(() => {
+                icon.style.display = "inline"
+                search.style.display = "none"
+                input.style.display = "none"
+            }, 100) 
+        })
+    } else {
+        const icon = document.querySelector(".header__busqueda--oculto");
+        const input = document.querySelector(".header__input");
+        icon.style.display = "none"
+        input.style.display = "inline"
+        search.style.display = "inline"
+    }
+}  
+
+window.addEventListener("resize", barraBusqueda);
+   
