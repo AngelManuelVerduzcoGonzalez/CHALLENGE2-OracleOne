@@ -149,7 +149,7 @@
     }
 
     .all-products__producto {
-        width: calc((100% / 2) - 12px);
+        width: calc((100% / 2) - 14px);
         padding-bottom: 1rem;
     }
 
